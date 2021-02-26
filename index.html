@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Turbo Shield</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .padding-top {
+        margin-top: 40px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html"><img src="img/logo.svg" class="logo" alt="shield-logo"> Turbo Shield</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <!-- <span data-feather="home"></span> -->
+              <img src="img/delivery.svg" class="nav-icon">
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders-status.html">
+              <img src="img/24-hours.svg" class="nav-icon">
+              Orders by Status
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders-trucks.html">
+              <img src="img/delivery-truck.svg" class="nav-icon">
+              Orders by Delivery Trucks           
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+      <h1 class="padding-top"> <img src="img/delivery.svg" alt="shipping" class="icons"> Auction Orders: Shipping Planner</h1>
+      <p> Keep track of customer orders with Turbo Shield. Track the packages by Status or Delivery Truck.</p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Track Number</th>
+            <th scope="col">Zip Code</th>
+            <th scope="col">Delivery Status</th>
+            <th scope="col"># of Boxes</th>
+            <th scope="col">Order Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Meredith</td>
+            <td>#1</td>
+            <td>22801</td>
+            <td>Delivered</td>
+            <td>1</td>
+            <td>12/22/20</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Derek</td>
+            <td>#2</td>
+            <td>22802</td>
+            <td>Alert: Not Delivered</td>
+            <td>6</td>
+            <td>12/23/20</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Alex</td>
+            <td>#1</td>
+            <td>22801</td>
+            <td>Delivered</td>
+            <td>4</td>
+            <td>1/7/21</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>George</td>
+            <td>#4</td>
+            <td>22807</td>
+            <td>Alert: Not Delivered</td>
+            <td>2</td>
+            <td>1/8/21</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Jackson</td>
+            <td>#4</td>
+            <td>22807</td>
+            <td>Delivered</td>
+            <td>8</td>
+            <td>1/10/21</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Izzie</td>
+            <td>#4</td>
+            <td>22807</td>
+            <td>Delivered</td>
+            <td>12</td>
+            <td>1/11/21</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Lexie</td>
+            <td>#1</td>
+            <td>22801</td>
+            <td>Delivered</td>
+            <td>3</td>
+            <td>1/15/21</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Callie</td>
+            <td>#3</td>
+            <td>22803</td>
+            <td>Delivered</td>
+            <td>1</td>
+            <td>1/16/21</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Jo</td>
+            <td>#3</td>
+            <td>22803</td>
+            <td>Delivered</td>
+            <td>4</td>
+            <td>1/4/21</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Owen</td>
+            <td>#3</td>
+            <td>22803</td>
+            <td>Delivered</td>
+            <td>5</td>
+            <td>1/15/21</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Deluca</td>
+            <td>#4</td>
+            <td>22807</td>
+            <td>Alert: Not Delivered</td>
+            <td>7</td>
+            <td>1/16/21</td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Amelia</td>
+            <td>#1</td>
+            <td>22801</td>
+            <td>Alert: Not Delivered</td>
+            <td>3</td>
+            <td>1/31/21</td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Miranda</td>
+            <td>#1</td>
+            <td>22801</td>
+            <td>Alert: Not Delivered</td>
+            <td>1</td>
+            <td>2/1/21</td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Teddy</td>
+            <td>#4</td>
+            <td>22807</td>
+            <td>Alert: Not Delivered</td>
+            <td>12</td>
+            <td>2/15/21</td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Richard</td>
+            <td>#3</td>
+            <td>22803</td>
+            <td>Alert: Not Delivered</td>
+            <td>17</td>
+            <td>1/4/21</td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>Maggie</td>
+            <td>#2</td>
+            <td>22802</td>
+            <td>Alert: Not Delivered</td>
+            <td>5</td>
+            <td>2/12/21</td>
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+            <td>Denny</td>
+            <td>#4</td>
+            <td>22807</td>
+            <td>Alert: Not Delivered</td>
+            <td>7</td>
+            <td>2/14/21</td>
+          </tr>
+          <tr>
+            <th scope="row">18</th>
+            <td>Ben</td>
+            <td>#1</td>
+            <td>22801</td>
+            <td>Alert: Not Delivered</td>
+            <td>9</td>
+            <td>3/17/21</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h1 class="padding-top"> <img src="img/package.svg" alt="shipping" class="icons"> Shipping Orders</h1>
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+    
+    </main>
+  </div>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+  </body>
+</html>
